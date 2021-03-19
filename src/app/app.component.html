@@ -1,0 +1,41 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<style>
+
+</style>
+
+<h1>Primer Clase</h1>
+<div class="contenedor">
+  <h1>{{title}}</h1>
+  <form action="">
+      <p>
+          <label>Edad Uno </label>
+          <input type="text" name="edadUno" [(ngModel)]="edadUno">
+      </p>
+      <p>
+          <label>Edad Dos </label>
+          <input type="text" name="edadDos" [(ngModel)]="edadDos">
+      </p>
+      <p>
+          <button (click)="calcular()">
+              Calcular
+          </button>
+      </p>
+      <p>
+          <button (click)="limpiar()">
+              Limpiar
+          </button>
+      </p>
+      <p>Resultado promedio: {{resultadoPromedio}}</p>    
+      <p>Resultado suma: {{resultadoSuma}}</p>    
+  </form>
+</div>
+
+<router-outlet></router-outlet>
